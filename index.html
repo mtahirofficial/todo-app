@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <title>TODO APP</title>
+    <link rel="shortcut icon" href="../images/fm.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/76f0b3d2b7.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div id="top">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div>
+                        <img id="logo-img" src="../images/fm-logo.png" alt="fm-logo" title="fm devndesign" width="100px">
+                        <h1 class="text-center mt-0" id="heading">TODO APP</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <div>
+                        <input class="w-100 h-25 todo" type="text" name="todo" id="todo" placeholder="Enter todo ...">
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div>
+                        <button class="btn btn-outline-primary mt-4 w-100" id="add" onclick="checkValue()">
+                            <i class="fas fa-plus"></i>
+                            Add
+                        </button>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div>
+                        <button class="btn btn-outline-danger mt-4 w-100" id="dltall" onclick="deleteAll()">
+                            <i class="fas fa-trash"></i>
+                            Delete All 
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="task-list">
+            <ul id="todoList">
+            </ul>
+        </div>
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+
+</html>
+</body>
